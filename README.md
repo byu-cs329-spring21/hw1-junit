@@ -48,8 +48,8 @@ Use each of the following assertions somewhere in the created methods:
   * assertTrue(booleanExpression)	The assertion fails if booleanExpression is not true.
   * assertAll(
       "Assert All of these",
-      () ‑> assert...,
-      () ‑> assert...;
+      () ‑> assert<...>,
+      () ‑> assert<...>;
   * assertThrows(NullPointerException.class, () ‑> ...do something...);
       
 # Grading Rubric
