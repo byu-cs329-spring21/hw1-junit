@@ -32,25 +32,25 @@ Students are expected to use descriptive naming conventions for test methods. Th
 Students are also expected to use `@Tag` to help filter tests and `@DisplayName` for more readable output in IDEs and reports. These annotations with grouping tests with nesting constitute acceptable documentation for tests.
 
 Create test methods using each of the following annotations:
-@Test	
-@BeforeAll	
-@BeforeEach	
-@AfterEach	
-@AfterAll	
-@Disabled	
-@ParameterizedTest
+  * @Test	
+  * @BeforeAll	
+  * @BeforeEach	
+  * @AfterEach	
+  * @AfterAll	
+  * @Disabled	
+  * @ParameterizedTest
 
 Use each of the following assertions somewhere in the created methods:
-assertEquals(expected, actual)	The assertion fails if expected does not equal actual.
-assertFalse(booleanExpression)	The assertion fails if booleanExpression is not false.
-assertNull(actual)	The assertion fails if actual is not null.
-assertNotNull(actual)	The assertion fails if actual is null.
-assertTrue(booleanExpression)	The assertion fails if booleanExpression is not true.
-assertAll(
+  * assertEquals(expected, actual)	The assertion fails if expected does not equal actual.
+  * assertFalse(booleanExpression)	The assertion fails if booleanExpression is not false.
+  * assertNull(actual)	The assertion fails if actual is not null.
+  * assertNotNull(actual)	The assertion fails if actual is null.
+  * assertTrue(booleanExpression)	The assertion fails if booleanExpression is not true.
+  * assertAll(
       "Assert All of these",
       () ‑> assert...,
       () ‑> assert...;
-assertThrows(NullPointerException.class, () ‑> ...do something...);
+  * assertThrows(NullPointerException.class, () ‑> ...do something...);
       
 # Grading Rubric
 
