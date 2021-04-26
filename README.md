@@ -39,8 +39,9 @@ Create test methods using each of the following annotations:
   * @AfterAll	
   * @Disabled	
   * @ParameterizedTest
+  * @Nested
 
-Use each of the following assertions somewhere in the created methods:
+Use each of the following assertions/assumptions somewhere in the created methods:
   * assertEquals(expected, actual)	The assertion fails if expected does not equal actual.
   * assertFalse(booleanExpression)	The assertion fails if booleanExpression is not false.
   * assertNull(actual)	The assertion fails if actual is not null.
@@ -51,6 +52,7 @@ Use each of the following assertions somewhere in the created methods:
       () ‑> assert<...>(...),
       () ‑> assert<...>(...));
   * assertThrows(NullPointerException.class, () ‑> ...do something...);
+  * assumeTrue(booleanExpression);
       
 # Grading Rubric
 
